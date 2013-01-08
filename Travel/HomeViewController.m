@@ -107,7 +107,6 @@ NSUInteger kNumberOfPages = 0;
 }
 
 #pragma mark - PullTableViewDelegate
-
 - (void)pullPsCollectionViewDidTriggerRefresh:(PullPsCollectionView *)pullTableView
 {
     [self performSelector:@selector(refreshTable) withObject:nil afterDelay:3.0f];
