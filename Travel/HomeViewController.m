@@ -191,8 +191,6 @@ NSUInteger kNumberOfPages = 0;
 }
 
 
-
-
 - (void)loadDataSource {
     pageIndex=0;
     [self nextPage];
