@@ -101,13 +101,7 @@ NSUInteger kNumberOfPages = 0;
 
 - (void) loadMoreDataToTable
 {
-    /*
-     
-     Code to actually load more data goes here.
-     
-     */
-    //    [self loadDataSource];
-//    [self.items addObjectsFromArray:self.items];
+    
     [self nextPage];
     self.collectionView.pullTableIsLoadingMore = NO;
 }
@@ -123,8 +117,10 @@ NSUInteger kNumberOfPages = 0;
 {
     [self performSelector:@selector(loadMoreDataToTable) withObject:nil afterDelay:3.0f];
 }
+
 - (void)viewDidUnload
 {
+    
     [self setCollectionView:nil];
     [super viewDidUnload];
 }
